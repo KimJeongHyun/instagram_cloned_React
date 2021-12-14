@@ -107,17 +107,17 @@ export default function FeedComponent(props){
                         
                     </div>
                     <div id='feedImgLengthDot'>
-                        <FontAwesomeIcon icon={faCircle}/>
+                        <FontAwesomeIcon id='faCircle' icon={faCircle}/>
                     </div>
                 </section>
                 <section id='feedBtns'>
                     <div id='feedOptionBtns'>
-                        <FontAwesomeIcon icon={faHeart}/>
-                        <FontAwesomeIcon icon={faComment}/>
-                        <FontAwesomeIcon icon={faLocationArrow}/>
+                        <FontAwesomeIcon id='feedOptionBtnEach' icon={faHeart}/>
+                        <FontAwesomeIcon id='feedOptionBtnEach' icon={faComment}/>
+                        <FontAwesomeIcon id='feedOptionBtnEach' icon={faLocationArrow}/>
                     </div>
                     <div id='feedScrapBtn'>
-                        <FontAwesomeIcon icon={faStickyNote}/>
+                        <FontAwesomeIcon id='feedOptionScrapBtn' icon={faStickyNote}/>
                     </div>
                 </section>
                 <section id='feedLikes'>

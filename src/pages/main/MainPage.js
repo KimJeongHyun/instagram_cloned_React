@@ -5,7 +5,7 @@ import MainFeedFriends from './MainFeedFriends';
 import FeedComponent from '../../components/FeedComponent';
 import MainSideBar from './MainSideBar';
 
-import './main.css'
+import './main.scss'
 
 function MainPage(props){
     const [feedData,setFeedData] = useState([
