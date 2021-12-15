@@ -1,4 +1,4 @@
-export default function SpanArrayComponent(props){
+export default function SearchResultArrayComponent(props){
 
     return(
         <>
