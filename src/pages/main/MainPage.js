@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react'
 
-import MainNavBar from './MainNavBar';
+import MainNavBar from '../../components/MainNavBar';
 import MainFeedFriends from './MainFeedFriends';
 import FeedComponent from '../../components/FeedComponent';
 import MainSideBar from './MainSideBar';

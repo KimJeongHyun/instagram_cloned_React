@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faSearch,faHome,faCompass,faPlus,faLocationArrow,faHeart} from "@fortawesome/free-solid-svg-icons"
 
-import SpanArrayComponent from '../../components/SpanArrayComponent';
+import SpanArrayComponent from './SpanArrayComponent';
 
 
 export default function MainNavBar(props){

@@ -158,7 +158,7 @@ html,body{
                         #profileImg{
                             width:28px;
                             height:28px;
-                            background-image:url('../images/jh_profile.jpg');
+                            background-image:url('../assets/images/jh_profile.jpg');
                             background-size:30px 30px;
                             border-radius:50%;
                             cursor:pointer;
@@ -247,7 +247,7 @@ html,body{
                             #friendImg{
                                 width:55px;
                                 height:55px;
-                                background-image:url('../images/jh_profile.jpg');
+                                background-image:url('../assets/images/jh_profile.jpg');
                                 background-size:55px 55px;
                                 background-repeat:no-repeat;
                                 border-radius:50%;
@@ -291,7 +291,7 @@ html,body{
                 background: rgba(var(--d87,255,255,255),1);
                 border: 1px solid rgba(var(--b6a,219,219,219),1);
                 margin-bottom:100px;
-
+                position:relative;
                 #feedProfile{
                     display:flex;
                     flex-direction: row;
@@ -307,7 +307,7 @@ html,body{
                         #feedProfileImg{
                             width:42px;
                             height:42px;
-                            background-image:url('../images/jh_profile.jpg');
+                            background-image:url('../assets/images/jh_profile.jpg');
                             background-size:42px 42px;
                             border-radius:50%;
                         }
@@ -342,35 +342,76 @@ html,body{
                         }
                     }
                 }
-                
-                #feedImg{
-                    height:550px;
-                    background-color: rgba(var(--d87,255,255,255),1);
-                    margin:0;
-                    padding:0;
 
-                    #feedImgBox{
-                        background-image:url('../images/cafe_photos.jpg');
-                        background-size:cover;
-                        background-repeat: no-repeat;
-                        height:100%;
-                    }
-
-                    #feedImgLengthDot{
+                #feedImgContainer{
+                    position:relative;
+                    
+                    #feedImg{
                         display:flex;
+                        position:relative;
+                        max-width:2420px;
+                        height:550px;
+                        background-color: rgba(var(--d87,255,255,255),1);
+                        margin:0;
+                        padding:0;
+                        overflow-x:scroll;
+                        scroll-behavior: smooth;
+                        ul{
+                            display: flex;
+                            flex-direction: row;
+                            list-style-type: none;
+                            height:100%;
+                            margin:0;
+                            padding:0;
+                            li{
+                                width:605px;
+                                height:100%;
+                                img{
+                                    width:100%;
+                                    height:100%;
+                                    object-fit:scale-down;
+                                }
+                            }
+                        }
+                    }
+    
+                    #feedImgBtns{
+                        display:flex;
+                        justify-content: space-between;
+                        position:absolute;
+                        width:100%;
+                        top:50%;
+                        button:nth-child(1){
+                            background:none;
+                            border:none;
+                            cursor:pointer;
+                            margin-left:30px;
+                        }
+                        button:nth-child(2){
+                            background:none;
+                            border:none;
+                            cursor:pointer;
+                            margin-right:30px;
+                        }
+                    }
+    
+                    #feedImgDot{
+                        display:flex;
+                        flex-direction: row;
                         justify-content: center;
-                        margin:15px 0;
-                        #faCircle{
-                            font-size:10px;
-                            color:rgba(var(--d69,0,149,246),1);
+                        #feedImgLengthDot{                        
+                            margin:0px 5px;
+                            #faCircle{
+                                font-size:7px;
+                            }
                         }
                     }
                 }
+
                 #feedBtns{
                     display:flex;
                     flex-direction: row;
                     justify-content: space-between;
-                    margin-top:18px;
                     padding:0 15px;
 
                     #feedOptionBtns #feedOptionBtnEach{
@@ -400,7 +441,7 @@ html,body{
                     #feedLikesImg:nth-child(1){
                         width:20px;
                         height:20px;
-                        background-image:url('../images/jh_profile.jpg');
+                        background-image:url('../assets/images/jh_profile.jpg');
                         background-size:20px 20px;
                         border: 2px solid #fff;
                         border-radius: 50%;
@@ -411,7 +452,7 @@ html,body{
                     #feedLikesImg:nth-child(2){
                         width:20px;
                         height:20px;
-                        background-image:url('../images/peach.jpg');
+                        background-image:url('../assets/images/peach.jpg');
                         background-size:20px 20px;
                         border: 2px solid #fff;
                         border-radius: 50%;
@@ -551,7 +592,7 @@ html,body{
             #profileImg{
                 width:57px;
                 height:60px;
-                background-image:url('../images/jh_profile.jpg');
+                background-image:url('../assets/images/jh_profile.jpg');
                 background-size:59px 67px;
                 border-radius:50%;
                 cursor:pointer;
@@ -653,7 +694,7 @@ html,body{
                 #recommendFriendListTag:nth-child(1) .recommendFriendImg{
                     width:30px;
                     height:30px;
-                    background-image:url('../images/jh_profile.jpg');
+                    background-image:url('../assets/images/jh_profile.jpg');
                     background-size:32px 34px;
                     border-radius:50%;
                     cursor:pointer;
@@ -662,7 +703,7 @@ html,body{
                 #recommendFriendListTag:nth-child(2) .recommendFriendImg{
                     width:30px;
                     height:30px;
-                    background-image:url('../images/peach.jpg');
+                    background-image:url('../assets/images/peach.jpg');
                     background-size:32px 34px;
                     border-radius:50%;
                     cursor:pointer;
@@ -671,7 +712,7 @@ html,body{
                 #recommendFriendListTag:nth-child(3) .recommendFriendImg{
                     width:30px;
                     height:30px;
-                    background-image:url('../images/cafe_photos.jpg');
+                    background-image:url('../assets/images/cafe_photos.jpg');
                     background-size:32px 34px;
                     border-radius:50%;
                     cursor:pointer;
@@ -680,7 +721,7 @@ html,body{
                 #recommendFriendListTag:nth-child(4) .recommendFriendImg{
                     width:30px;
                     height:30px;
-                    background-image:url('../images/unsplash_instagram.png');
+                    background-image:url('../assets/images/unsplash_instagram.png');
                     background-size:32px 34px;
                     border-radius:50%;
                     cursor:pointer;
@@ -689,7 +730,7 @@ html,body{
                 #recommendFriendListTag:nth-child(5) .recommendFriendImg{
                     width:30px;
                     height:30px;
-                    background-image:url('../images/peach.jpg');
+                    background-image:url('../assets/images/peach.jpg');
                     background-size:32px 34px;
                     border-radius:50%;
                     cursor:pointer;

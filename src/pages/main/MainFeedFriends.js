@@ -99,7 +99,7 @@ export default function MainFeedFriends(props){
                 </ul>         
             </section>
             <section id='friendsFeedsBtnArea'>
-                <button id='friendsFeedPrev' onClick={friendsFeedScrollPrev} > <FontAwesomeIcon icon={faChevronLeft}/> </button>
+                <button id='friendsFeedPrev' onClick={friendsFeedScrollPrev}> <FontAwesomeIcon icon={faChevronLeft}/> </button>
                 <button id='friendsFeedNext' onClick={friendsFeedScrollNext}> <FontAwesomeIcon icon={faChevronRight}/> </button>
             </section>
         </>
