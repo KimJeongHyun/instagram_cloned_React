@@ -49,15 +49,14 @@ function Login(props) {
       : imgBox.classList.remove('hide');
   };
 
-  const loginFunc = () => {
-    navigate('/main-hyun');
+  const loginFunc = () => {    
+    navigate('/main');
     // 서버로 입력값을 전달한다.
     // 서버의 응답에 따라 메인 페이지로 이동하거나, alert를 발생시킨다.
     // window.location.href='main.html'
   };
 
   const enterLoginValidate = event => {
-    console.log(event.target);
     if (event.key === 'Enter') {
       loginFunc();
     }

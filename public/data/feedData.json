@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "userName": "KJH",
+    "userLocation": "서울 강서구",
+    "feedComment": "하하!",
+    "feedImgPaths" : "images/jeonghyunKim/cafe_photos.jpg,images/jeonghyunKim/peach.jpg"
+  },
+  {
+    "id": 2,
+    "userName": "PARK",
+    "userLocation": "서울 강서구",
+    "feedComment": "하하!asdfaslkfsjdlfjlaksdfjlkasdjlfkjlsdfj",
+    "feedImgPaths" : "images/jeonghyunKim/cafe_photos.jpg,images/jeonghyunKim/peach.jpg,images/jeonghyunKim/unsplash_instagram.png"
+  }
+]

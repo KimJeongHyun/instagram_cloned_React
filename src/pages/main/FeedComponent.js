@@ -20,6 +20,7 @@ export default function FeedComponent({ feedItem }) {
   const [commentData, setCommentData] = useState([]);
   const [feedImgDotPosition, setFeedImgDotPosition] = useState(0);
   const [viewAllCommentFlag, setViewAllCommentFlag] = useState(false);
+  const [feedImgPaths] = useState(feedItem.feedImgPaths.split(','))
 
   const feedImgDotContainerRef = useRef();
 
@@ -196,24 +197,11 @@ export default function FeedComponent({ feedItem }) {
           style={{ scrollLeft: 0 }}
         >
           <ul>
-            <li>
-              <img
-                src="images/jeonghyunKim/images/cafe_photos.jpg"
-                alt="dummyImage"
-              />
-            </li>
-            <li>
-              <img
-                src="images/jeonghyunKim/images/peach.jpg"
-                alt="dummyImage"
-              />
-            </li>
-            <li>
-              <img
-                src="images/jeonghyunKim/images/unsplash_instagram.png"
-                alt="dummyImage"
-              />
-            </li>
+            {feedImgPaths.map((item, index)=>{
+              return (
+                <li key={index}><img src={item} alt='dummyImage'/></li>
+              )
+            })}
           </ul>
         </section>
         <section id="feedImgBtns">
@@ -225,18 +213,15 @@ export default function FeedComponent({ feedItem }) {
           </button>
         </section>
         <section id="feedImgDot" ref={feedImgDotContainerRef}>
-          <div id="feedImgLengthDot">
-            <FontAwesomeIcon id="faCircle" icon={faCircle} />
-          </div>
-          <div id="feedImgLengthDot">
-            <FontAwesomeIcon id="faCircle" icon={faCircle} />
-          </div>
-          <div id="feedImgLengthDot">
-            <FontAwesomeIcon id="faCircle" icon={faCircle} />
-          </div>
+          {feedImgPaths.map((item,index)=>{
+            return (
+              <div id="feedImgLengthDot">
+                <FontAwesomeIcon id="faCircle" icon={faCircle} />
+              </div>
+            )
+          })}
         </section>
       </section>
-
       <section id="feedBtns">
         <div id="feedOptionBtns">
           <FontAwesomeIcon id="feedOptionBtnEach" icon={faHeart} />

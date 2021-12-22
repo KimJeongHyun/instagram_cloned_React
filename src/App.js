@@ -4,8 +4,8 @@ import {
   Route
 } from "react-router-dom"
 
-import LoginPage from "./pages/Login/LoginPage";
-import MainPage from "./pages/Main/MainPage";
+import LoginPage from "./pages/Login/Login";
+import MainPage from "./pages/Main/Main";
 import RegisterPage from "./pages/Register/Register"
 
 function App() {
