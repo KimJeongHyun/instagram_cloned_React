@@ -4,8 +4,9 @@ import {
   Route
 } from "react-router-dom"
 
-import LoginPage from "./pages/login/LoginPage";
-import MainPage from "./pages/main/MainPage";
+import LoginPage from "./pages/Login/LoginPage";
+import MainPage from "./pages/Main/MainPage";
+import RegisterPage from "./pages/Register/Register"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<LoginPage/>}/>
           <Route path='/main' element={<MainPage/>}/>
+          <Route path='/Register' element={<RegisterPage/>}/>
         </Routes>
       </Router>
   );

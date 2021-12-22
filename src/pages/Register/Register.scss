@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+#registerContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+
+  #registerArticle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    #registerBox {
+      max-width: 350px;
+      color: rgba(var(--i1d, 38, 38, 38), 1);
+      flex-grow: 1;
+      margin-top: 70px;
+      #registerInputBox {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(var(--d87, 255, 255, 255), 1);
+        border: 1px solid lightgrey;
+        padding-bottom: 32px;
+        header {
+          font-size: 52px;
+          font-family: 'Billabong', sans-serif;
+          margin: 30px auto 30px;
+        }
+        input {
+          border: 0.5px solid lightgray;
+          border-radius: 2px;
+          background: rgba(var(--b3f, 250, 250, 250), 1);
+          color: rgba(var(--i1d, 38, 38, 38), 1);
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            Helvetica, Arial, sans-serif;
+          font-size: 12px;
+          margin: 0 40px 10px;
+          padding: 9px 0 11px 8px;
+        }
+        button {
+          border: none;
+          border-radius: 3px;
+          background-color: rgba(var(--d69, 0, 149, 246), 1);
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+          margin: 8px 40px;
+          padding: 5px;
+
+          &:disabled {
+            background-color: rgba(var(--d69, 0, 149, 246), 0.3);
+          }
+        }
+      }
+    }
+  }
+}
